@@ -4,7 +4,7 @@
 
 ```
 sudo apt update  
-sudo apt insatll fail2ban  
+sudo apt install fail2ban  
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local  
 sudo vim jail.local  
 
@@ -16,7 +16,7 @@ sudo systemctl start fail2ban (to start fail2ban)
 
 ## nginx, php, postgresql
 
-sudo apt install nginx postrgesql  
+sudo apt install nginx postgresql  
 
 (https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart)  
 ```
@@ -73,10 +73,10 @@ change $CFG->wwwroot from "http://..." to "https://..."
 
 ## moodle google search block (https://docs.moodle.org/dev/Blocks , https://developers.google.com/custom-search/v1/overview , https://developers.google.com/custom-search/v1/using_rest)
 
-create files according to step-by-step guide
-changed name from simplehtml to google
-in moodle/blocks/google/block_google.php write simple curl function for custom google search
-(see block_google.php in repository)
+create files according to step-by-step guide  
+changed name from simplehtml to google  
+in moodle/blocks/google/block_google.php write simple curl function for custom google search  
+(see block_google.php in repository)  
 
 
 
